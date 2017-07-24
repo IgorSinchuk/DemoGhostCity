@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context="com.nonexistentware.igor.demoghostcity.ScreenOfChoice">
+
+    <ImageView
+        android:id="@+id/person"
+        android:src="@drawable/person"
+        android:layout_width="34sp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="115dp"
+        android:layout_above="@+id/bodyAvailable"
+        android:layout_toRightOf="@+id/personSecond"
+        android:layout_toEndOf="@+id/personSecond" />
+
+    <ImageView
+        android:id="@+id/personSecond"
+        android:src="@drawable/secondperson"
+        android:layout_width="34sp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/personThird"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+    <ImageView
+        android:id="@+id/personThird"
+        android:src="@drawable/thirdperson"
+        android:layout_width="34sp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="65dp"
+        android:layout_above="@+id/person"
+        android:layout_toLeftOf="@+id/personSecond"
+        android:layout_toStartOf="@+id/personSecond"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <TextView
+        android:id="@+id/bodyAvailable"
+        android:text="[x3]"
+        android:textSize="30dp"
+        android:textColor="@color/color_white"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/gameLogo"
+        android:gravity="center"
+        android:text="[Ghost city]"
+        android:textColor="@color/color_white"
+        android:textSize="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/invisibleTimer"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
